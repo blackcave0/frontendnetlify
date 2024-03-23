@@ -6,10 +6,10 @@ export default defineConfig({
   plugins: [react()],
   server :{
     hmr : {overlay : false},
-    /* proxy : {
+    proxy : {
       "/api" : {
-        target : 'https://s2m.netlify.app'
+        target : 'https://netlifybackend.onrender.com'
       }
-    } */
+    }
   },
 })

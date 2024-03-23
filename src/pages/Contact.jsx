@@ -104,6 +104,7 @@ function Contact() {
                     onChange={InputChange}
                   />
                 </div>
+                {/* comment */}
 
                 {/* <div className="form-group">
                   <label htmlFor="phone">phone</label>
