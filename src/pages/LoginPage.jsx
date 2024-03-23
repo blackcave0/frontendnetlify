@@ -43,7 +43,7 @@ function LoginPage() {
 
 
         setUser({email : '', password : ''});
-        naviGate('/')
+        naviGate(`/${BASE_URL}`)
       } else {
         toast.error(data.extraDetails ? data.extraDetails : data.message)
       }
