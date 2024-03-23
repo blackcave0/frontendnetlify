@@ -8,7 +8,7 @@ function AdminContacts() {
   const {authorizationToken} = useAuth();
   async function getContactsData(){
     try {
-      const response = await fetch(`http://localhost:8000/api/admin/contacts`, {
+      const response = await fetch(`${BASE_URL}/api/admin/contacts`, {
         method : "GET",
         headers : {
           Authorization :authorizationToken, 
