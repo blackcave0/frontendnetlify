@@ -15,7 +15,6 @@ import AdminUsers from './pages/AdminUsers'
 import AdminContacts from './pages/AdminContacts'
 import AdminLayout from './components/layouts/AdminLayout'
 import AdminUpdate from './pages/AdminUpdate'
-import { BASE_URL } from './store/helper'
 function App (){
   return (
     <>
@@ -24,7 +23,7 @@ function App (){
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
-          <Route path={`${BASE_URL}/contact`}  element={<div className='cont'><Contact/></div>}/>
+          <Route path='/contact'  element={<div className='cont'><Contact/></div>}/>
           <Route path='/services' element={<Services/>}/>
           <Route path='/register' element={<RegisterPage/>}/>
           <Route path='/login' element={<LoginPage/>}/>
